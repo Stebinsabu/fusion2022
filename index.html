@@ -74,7 +74,7 @@
         form.addEventListener('submit', e => {
             e.preventDefault()
             fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => $("#form_alerts").html("<div class='alert alert-success'>You have ben sucessfully registered for fusion.</div>"))
+            .then(response => $("#form_alerts").html("<div class='alert alert-success'>You have been sucessfully registered for fusion.</div>"))
             .catch(error => $("#form_alerts").html("<div class='alert alert-danger'>Contact message not sent.</div>"))
         })
     </script>
